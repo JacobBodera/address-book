@@ -23,7 +23,10 @@ My approach to this project was to follow the following steps:
 1. Initialize the project and get some useful libraries installed, such as Tailwind and Cypress.
    - Tailwind is a library that I only recently started using in a personal project but I find it quite intuitive and easy to use.
    - Cypress is a testing library that I've used in previous work terms so I'm comfortable with it. As well, it allows for both component and e2e testing
-2. Get all of the random user data from the API
-  - I used axios to get the user data which is a library I have never worked with before but the documentation made it very easy to implement
-3. Creating the necessary components
-  - I
+2. Get all of the random user data from the API.
+   - I used axios to get the user data which is a library I have never worked with before but the documentation made it very easy to implement
+3. Creating the necessary components.
+   - I have created similar designs where there in a main component which generates a list of sub-components
+   - I decided to create an `<AddressList/>` component which had access to the list of user data. In the component, I mapped through the array of data and sent each element as a prop to an `<Address/>` component
+   - This component displays the information for each user and includes the logic to toggle to a more detailed user card.
+4. Added testing using Cypress.
